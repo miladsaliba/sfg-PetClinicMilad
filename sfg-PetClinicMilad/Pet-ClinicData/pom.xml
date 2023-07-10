@@ -7,8 +7,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>Pet-ClinicData</artifactId>
+
     <name>Archetype - Pet-ClinicData</name>
     <url>http://maven.apache.org</url>
+    <properties><spring-boot.repackage.skip>true</spring-boot.repackage.skip></properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -32,12 +34,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <executions>
                     <execution>
-                        <goals>
-                           <goal>repackage</goal>
-                        </goals>
-                        <configuration>
-                            <skip>true</skip>
-                        </configuration>
                     </execution>
                 </executions>
                 <configuration>
