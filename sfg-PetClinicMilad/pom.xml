@@ -15,16 +15,27 @@
     <name>sfg-PetClinicMilad</name>
 	<description>sfg-PetClinicMilad</description>
     <modules>
-        <module>Pet-ClinicData</module>
+        <module>Pet-Clinic-Data</module>
         <module>Pet-Clinic-Web</module>
     </modules>
-    <properties>
+	<properties>
 		<java.version>17</java.version>
+		<maven.compiler.source>19</maven.compiler.source>
+		<maven.compiler.target>19</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-test</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
 		</dependency>
 
 	</dependencies>
